@@ -1,0 +1,1 @@
+import task from '/src/task.js';

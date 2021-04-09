@@ -1,3 +1,4 @@
+//Create task object for Todos
 class task{
     constructor(title, description, dueDate, priority){
         this.title = title;
