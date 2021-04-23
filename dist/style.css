@@ -1,0 +1,40 @@
+.name{
+  
+  text-align: center;
+  color: #41B883;
+  font-size: 60px;
+}
+
+body{
+    background-color: #35495e;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-auto-rows: 1000px;
+}
+
+.sidebar{
+    background-color: beige;
+}
+
+.listarea{
+    background-color: white;
+}
+
+h2{
+    color: #35495e;
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+    margin: 0px 0px 0px;
+}
+
+.addProject{
+    border: 2px solid black;
+    margin-left: 25px;
+    font-size: 15px;
+    background-color: beige;
+    color: #35495e;
+}
