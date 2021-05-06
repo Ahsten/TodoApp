@@ -21,3 +21,5 @@ class project {
         delete this.tasks[a];
     }
 }
+
+export {project};

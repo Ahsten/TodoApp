@@ -16,7 +16,7 @@ class task{
     }
 
     getDescription(){
-        return this.description;
+        return this.description; 
     }
 
     setDescription(description){
@@ -39,3 +39,5 @@ class task{
         this.priority = priority;
     }
 }
+
+export {task};

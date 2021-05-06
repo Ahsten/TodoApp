@@ -5,22 +5,36 @@
   font-size: 60px;
 }
 
-body{
-    background-color: #35495e;
-}
-
-.main{
+.container{
     display: grid;
-    grid-template-columns: 250px auto;
-    grid-auto-rows: 1000px;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-areas: 
+    "head head head"
+    "side main main"
+    "foot foot foot"; 
+
+    width: 100vw;
+    height: 100vh;
 }
 
 .sidebar{
     background-color: beige;
+    grid-area: side;
 }
 
-.listarea{
-    background-color: white;
+.main-area{
+    background-color: red;
+    grid-area: main;
+}
+
+.header{
+    background-color: #41B883;
+    grid-area: head;
+}
+.footer{
+    background-color: royalblue;
+    grid-area: foot;
 }
 
 h2{
@@ -31,10 +45,3 @@ h2{
     margin: 0px 0px 0px;
 }
 
-.addProject{
-    border: 2px solid black;
-    margin-left: 25px;
-    font-size: 15px;
-    background-color: beige;
-    color: #35495e;
-}
