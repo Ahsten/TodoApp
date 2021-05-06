@@ -1,5 +1,4 @@
 .name{
-  
   text-align: center;
   color: #41B883;
   font-size: 60px;
@@ -7,41 +6,34 @@
 
 .container{
     display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: 2fr 7fr 1fr;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 9fr;
     grid-template-areas: 
-    "head head head"
-    "side main main"
-    "foot foot foot"; 
+    "head head "
+    "side main"; 
 
-    width: 100vw;
-    height: 100vh;
+    width: 95vw;
+    height: 95vh;
 }
 
 .sidebar{
-    background-color: beige;
+    background-color: #41B883;
     grid-area: side;
 }
 
 .main-area{
-    background-color: red;
+    background-color: white;
     grid-area: main;
 }
 
 .header{
-    background-color: #41B883;
+    background-color: #35495e;
     grid-area: head;
 }
-.footer{
-    background-color: royalblue;
-    grid-area: foot;
-}
 
-h2{
-    color: #35495e;
-    text-align: left;
-    padding: 20px;
-    font-size: 30px;
-    margin: 0px 0px 0px;
+h1{
+    text-align: center;
+    color: #41B883;
+    font-size: 60px;
 }
 
