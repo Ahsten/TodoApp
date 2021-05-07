@@ -22,7 +22,7 @@
 }
 
 .main-area{
-    background-color: white;
+    background-color: beige;
     grid-area: main;
 }
 
@@ -35,5 +35,9 @@ h1{
     text-align: center;
     color: #41B883;
     font-size: 60px;
+}
+
+.form-popup{
+    display: none;
 }
 
