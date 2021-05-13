@@ -9,7 +9,7 @@
     grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr 9fr;
     grid-template-areas: 
-    "head head "
+    "head head"
     "side main"; 
 
     width: 95vw;

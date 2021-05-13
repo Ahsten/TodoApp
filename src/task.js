@@ -40,4 +40,4 @@ class task{
     }
 }
 
-export {task};
+export {task}

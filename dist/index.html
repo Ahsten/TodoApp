@@ -4,6 +4,7 @@
 <head>
   <title>Todo</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <div class="container">
@@ -12,16 +13,16 @@
       </div>
       <div class="sidebar">
         <h2>Projects</h2>
-        <button>Add Project</button>
+        <button id="addproject">Add Project</button>
       </div>
       <div class="main-area">
         Tasks
         <div>
-          <form class="form-popup">
+          <form id="form" class="form-popup">
             <h2>Project</h2>
     
             <label>Name</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" id="name" required>
     
             <label>Description</label>
             <input type="text" name="description" required>
@@ -35,12 +36,14 @@
               <option value="Medium">Medium</option>
               <option value="Low">Low</option>
             </select>
+
+            <input type="submit" id="submit">Submit</button>
           </form>
         </div>
+        <div id="task-list"></div>
       </div>
     </div>
-    
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

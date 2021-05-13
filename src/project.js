@@ -22,4 +22,4 @@ class project {
     }
 }
 
-export {project};
+export {project}
