@@ -37,7 +37,11 @@ h1{
     font-size: 60px;
 }
 
-.form-popup{
+.add-task{
     display: none;
+}
+
+.add-task.active{
+    display: block;
 }
 

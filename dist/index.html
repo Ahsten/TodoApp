@@ -16,29 +16,10 @@
         <button id="addproject">Add Project</button>
       </div>
       <div class="main-area">
-        Tasks
-        <div>
-          <form id="form" class="form-popup">
-            <h2>Project</h2>
-    
-            <label>Name</label>
-            <input type="text" name="name" id="name" required>
-    
-            <label>Description</label>
-            <input type="text" name="description" required>
-    
-            <label>Date</label>
-            <input type="date" name="date" required>
-    
-            <label for="prio">Priority: </label>
-            <select name="prio">
-              <option value="High">High</option>
-              <option value="Medium">Medium</option>
-              <option value="Low">Low</option>
-            </select>
-
-            <input type="submit" id="submit">Submit</button>
-          </form>
+        <button id="addTaskButton">Add Task</button>
+        <div class="add-task" id="addTask">
+          <input id="task" type="text">
+          <button id="add">Add</button>
         </div>
         <div id="task-list"></div>
       </div>
@@ -46,4 +27,4 @@
     <script src="main.js"></script>
 </body>
 
-</html>
+</html
