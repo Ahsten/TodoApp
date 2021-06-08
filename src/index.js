@@ -1,3 +1,3 @@
 import UI from './ui.js';
 
-UI.addTaskListners();
+UI.addTaskListeners();
