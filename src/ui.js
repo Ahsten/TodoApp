@@ -4,32 +4,22 @@ import project from './project';
 export default class UI{
 
     //Add event listners to open up form to add a task
-    static openAddTask(){
-        const addTask = document.getElementById('addTask');
-        addTask.classList.add("active");
-    }
-
-    static closeAddTask(){
-        const addButton = document.getElementById('addTask');
-        const task = document.getElementById("task").value;
-
-        UI.createTask(task);
-        addButton.classList.remove("active");
-    }
 
     static addTaskListeners(){
-        const addTaskButton = document.getElementById('addTaskButton');
+        const addTaskButton = document.querySelector('.input');
         const addToTaskList = document.getElementById('add');
-        //const delTaskButtons = document.getElementById("taskButton");
         
-        addTaskButton.addEventListener('click', UI.openAddTask);
+        addTaskButton.addEventListener('keydown', function(e){
+            if(e.key == "Enter"){
+                UI.createTask("H");
+            }
+        });
         addToTaskList.addEventListener('click', UI.closeAddTask);
-        //delTaskButtons.addEventListener('click', UI.deleteTask);
     }
 
     static createTask(name){
-        const taskList = document.getElementById("task-list");
-        const addTask = document.createElement("button");
+        const taskList = document.querySelector(".todo-list");
+        const addTask = document.createElement("div");
         addTask.innerHTML += name;
         
         taskList.appendChild(addTask);
@@ -41,10 +31,6 @@ export default class UI{
     static deleteTask(delTask){
         delTask.remove();
     }
-    
-
-    
-
     
 
 }
