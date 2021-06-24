@@ -10,29 +10,33 @@
 <body class="body">
   <div class="background">
   <div class="banner"></div>
-  <!-- <img src="/images/bg-desktop-dark.jpg"> -->
-  <main class="container">
+  <div class="container">
     <div class="header">
       <h1 class="heading">Todo</h1>
       <img class="mode" src="/images/icon-sun.svg">
     </div>
       <div class="input-container">
-        <div class="circle"></div>
+        <button class="add" id="add">Add</button>
         <input class="input" type="text" placeholder="Create a new todo">
       </div>
       <div class="todo-list-container">
-        <ul class="todo-list"></ul>
+        <div class="todo">
+          <div class="circle"></div>
+          <div>Test</div>
+          <button class="delete"></button>
+        </div>
       </div>
     <div class="summary">
-      <p>0 Items Left</p>
+      <p class="num-items">0 Items Left</p>
       <ul class="sort">
         <li>All</li>
         <li>Active</li>
         <li>Completed</li>
       </ul>
-      <p class="clear">Clear Completed</p>
+      <p class="clear">Clear</p>
     </div>
-  </main>
+  </div>
 </div>
+<script src="main.js"></script>
 </body>
 </html>

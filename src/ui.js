@@ -3,36 +3,37 @@ import project from './project';
 
 export default class UI{
 
-    //Add event listners to open up form to add a task
-
+    //Add listeners for buttons the page
     static addTaskListeners(){
-        const addTaskButton = document.querySelector('.input');
-        const addToTaskList = document.getElementById('add');
-        
-        addTaskButton.addEventListener('keydown', function(e){
-            if(e.key == "Enter"){
-                UI.createTask("H");
-            }
-        });
-        addToTaskList.addEventListener('click', UI.closeAddTask);
+        const addButton = document.querySelector('.add');
+        addButton.addEventListener('click', UI.createTask);
     }
 
-    static createTask(name){
-        const taskList = document.querySelector(".todo-list");
+    //Creates the task and adds it to the todo list
+    static createTask(){
+        const taskList = document.querySelector(".todo-list-container");
         const addTask = document.createElement("div");
-        addTask.innerHTML += name;
+        const task = document.querySelector(".input").value;
         
-        taskList.appendChild(addTask);
-        addTask.addEventListener('click', function(){
-            UI.deleteTask(addTask)
-        });
-    }
+        //Only add task if there is a title
+        if(task != ""){
+            addTask.innerHTML += `
+                <div class="circle"></div>
+                    <div>${task}</div>
+                <button class="delete"></button>`
+            addTask.classList.add("todo");
+            taskList.appendChild(addTask);
+        }
 
-    static deleteTask(delTask){
-        delTask.remove();
+        const deleteButton = addTask.lastChild;
+        deleteButton.addEventListener('click',function(){
+            UI.deleteTask(addTask);
+        });
     }
     
-
+    static deleteTask(todo){
+        todo.remove();
+    }
 }
 
 
